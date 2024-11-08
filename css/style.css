@@ -1,0 +1,338 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+}
+
+header {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    position:fixed;
+    left: 0; right: 0;
+    top: 0; 
+
+    z-index: 2;
+    background-color: grey;
+
+}
+
+.image_block {
+    width: 140px;
+    height:  140px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 1%;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.content {
+    flex: 1 0 auto;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.logo {
+    scale: 0.75;
+}
+
+nav {
+    margin-right: 2%;
+}
+
+.main_text {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: left;
+}
+
+.title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    width: 60%;
+}
+
+footer {
+    width: 100%;
+    color: rgb(110, 110, 110);
+    background-color: rgb(26, 26, 26);
+    min-height: 50px;
+    flex: 1 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    position: relative;
+    bottom: 0;
+}
+
+.foreword {
+    width: 60%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-size: 20px;
+    color: white;
+    hyphens: auto;
+    text-align: left;
+    line-height: 2;
+    font-weight: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#front_side {
+    width: 587px;
+    height: 416px;
+    background-image: url(/img/car_front_side.png);
+    background-repeat: no-repeat;
+}
+
+.info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+    transform: translateY(100px);
+    transition: transform 1s, opacity 1s;
+}
+
+img {
+    z-index: 1;
+}
+
+.info:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    z-index: 0;
+    left: 65%;
+    top: 40%;
+    background-color: #73E2A7;
+}
+
+.info:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 35%;
+    height: 50%;
+    position: absolute;
+    z-index: 0;
+    right: 65%;
+    top: 40%;
+    background-color: #DEF4C6;
+}
+
+.info:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 20%;
+    top: 21%;
+    position: absolute;
+    z-index: 0;
+    background-color: #947EB0;
+}
+
+.info:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 55%;
+    height: 20%;
+    top: 30%;
+    position: absolute;
+    z-index: 0;
+    background-color: #348AA7;
+}
+
+.info .row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.text_block {
+    position: relative;
+    width: 50%;
+    max-height: 300px;
+    border: 2px solid white;
+    color: white;
+    overflow: auto;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 2;
+    font-weight: 100px;
+    padding: 40px;
+}
+
+.column .text_block {
+    margin-top: 100px;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.menu_line {
+    width: 40px;
+    height: 3px;
+    background-color: white;
+}
+
+@media (min-width: 576px) and (max-width: 1199.98px) {
+    .text_block, .title, .foreword{
+        font-size: 30px;
+    }
+    .nav
+    .info:nth-child(3)::before {
+        top: 12%
+    }
+    .info:nth-child(4)::before {
+        top: 15%
+    }
+    .btn-up {
+        opacity: 0;
+    }
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+   
+.carousel-inner {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 400%;
+    transition: transform 1s ease-in-out;
+}
+   
+.carousel-item {
+    flex: 1;
+    text-align: center;
+
+}
+   
+.carousel-item img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.btn-up {
+    position: fixed;
+    background-color: grey;
+    right: 30px;
+    bottom: 100px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    transition: opacity 1s;
+    z-index: 30;
+}
+
+.btn-up_hide {
+    opacity: 0;
+}
+  
+.img-gradient {
+    position:relative;
+    margin-top: 50px;
+}
+  
+  
+.img-gradient::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.7) 100%);
+    -webkit-background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.7) 100%); 
+    -moz-background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.7) 100%); 
+    background: -webkit-linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.1) 50%, rgba(0,0,0,0.7) 100%);
+}

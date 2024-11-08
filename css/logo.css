@@ -1,0 +1,260 @@
+:root {
+    --picture-wdt: 200px;
+    --picture-hgt: 200px;
+    --upper-wdt: 200px;
+    --upper-hgt: 170px;
+    --ground-wdt: 200px;
+    --ground-hgt: 30px;
+    --ground-color: rgb(0, 0, 0, 0.1);
+ }
+ 
+ .logo {
+     width: var(--picture-wdt);
+     height: var(--picture-hgt);
+ 
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .upper {
+     width: var(--upper-wdt);
+     height: var(--upper-hgt);
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ .ground {
+     width: var(--ground-wdt);
+     height: var(--ground-hgt);
+     overflow: hidden;
+}
+ 
+ .background {
+     /* display: flex; */
+     justify-content: center;
+ 
+     --big-brdr-wdt: 3px;
+     --big-wdt: 200px;
+     --sml-brdr-wdt: 3px;
+     --sml-wdt: 170px;
+     --big-circle-color: #8c8881;
+ }
+ 
+ .baseline {
+     width: 100%;
+     height: 3px;
+ 
+     border-radius: 3px;
+     background-color: black;
+ }
+ 
+ .big-circle {
+     position: relative;
+     width: calc(var(--big-wdt) - 2*var(--big-brdr-wdt));
+     height: calc(var(--big-wdt) - 2*var(--big-brdr-wdt));
+     border-radius: calc(var(--big-wdt)/2);
+     background-color: var(--big-circle-color);
+ 
+     border: var(--big-brdr-wdt) solid black;
+     border-right: var(--big-brdr-wdt) dashed black;
+ }
+ 
+ .small-circle {
+     position: absolute;
+     top: calc((var(--big-wdt) - var(--sml-wdt))/2);
+     left: calc((var(--big-wdt) - var(--sml-wdt))/2);
+     width: calc(var(--sml-wdt) - 2*var(--sml-brdr-wdt));
+     height: calc(var(--sml-wdt) - 2*var(--sml-brdr-wdt));
+     border-radius: 50%;
+     /* background-color: blue; */
+     
+     border: var(--sml-brdr-wdt) solid black;
+ 
+     display: grid;
+     grid-template-columns: 50% 50%;
+     grid-template-rows: 50% 50%;
+     overflow: hidden;
+     animation: rotating 2s infinite linear;
+ }
+
+ @keyframes rotating {
+     from {
+         rotate: 0deg;
+         transition: all 1.5s;
+     }
+     to {
+         rotate: 180deg;
+         transition: all 1.5s;
+     }
+ }
+ 
+ .box {
+     object-fit: cover;
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background-color: white;
+ }
+ 
+ .blue {
+     background-color: rgb(68, 68, 69);
+ }
+ 
+ .white {
+     background-color: white;
+ }
+ 
+ .car {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0px;
+ 
+     --wheel-pos: 35px;
+     --wheel-wdt: 20px;
+     --wheel-hgt: 35px;
+     --car-border: 4px;
+     --border-color: #181818;
+     --headlight-inside-color: #E98A15;
+     --headlight-outside-color: #FCFF4B;
+     --windshield-color: #616161;
+     --glare-color: #6f6f6f;
+     --body-color: #545353;
+ 
+     display: flex;
+     justify-content: center;
+     align-items: flex-end;
+ }
+ 
+ .wheel {
+     height: var(--wheel-hgt);
+     width: var(--wheel-wdt);
+     
+     position: absolute;
+     top: calc(var(--upper-hgt) - var(--wheel-hgt) - var(--car-border));
+ 
+     background-color: #CECCCC;
+     border-radius: 5px;
+     border: var(--car-border) solid var(--border-color);
+ }
+ 
+ #left_wheel {
+     left: var(--wheel-pos);
+ }
+ 
+ #right_wheel {
+     left: calc(var(--upper-wdt) - var(--wheel-pos) - var(--wheel-wdt) - 2*var(--car-border));
+ }
+ 
+ .car .base {
+     width: calc(var(--upper-wdt) - 2*var(--wheel-pos));
+     height: 60%;
+ 
+     position: absolute;
+     left: var(--wheel-pos);
+ 
+     display: grid;
+     grid-template-rows: 45% 20% 25%;
+     justify-items: center; 
+ }
+ 
+ .bumper {
+     height: 100%;
+     width: 90%;
+ 
+     border-radius: 5px;
+     transform: perspective(100px) rotateX(-200deg);
+     background-color: white;
+     border: var(--car-border) solid var(--border-color);
+     border-bottom: 0;
+     z-index: 0;
+ 
+     background-color: var(--body-color);
+ }
+ 
+ .muzzle {
+     width: calc(var(--upper-wdt) - 2*var(--wheel-pos) - 6px);
+     height: 100%;
+     z-index: 1;
+ 
+     background-color: white;
+     border-radius: 5px;
+     border: var(--car-border) solid var(--border-color);
+     border-bottom: 3px solid var(--border-color);
+ 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+     background-color: var(--body-color);
+ }
+ 
+ .headlight {
+     height: 85%;
+     border-radius: 50%;
+     aspect-ratio: 1/1;
+     background-color: var(--headlight-inside-color);
+     border: 3px solid var(--border-color);
+ 
+     display: flex;
+     align-items:center;
+     justify-content: center;
+ }
+ 
+ .headlight::before {
+     content: "";
+     display: block;
+     height: 60%;
+     border-radius: 50%;
+     aspect-ratio: 1/1;
+ 
+     background-color: var(--headlight-outside-color);
+     border: 2px solid var(--border-color);
+ }
+ 
+ .headlight_unit {
+     height: 100%;
+     aspect-ratio: 2.3/1;
+ 
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ 
+ .roof {
+     height: 100%;
+     width: 75%;
+ 
+     border-radius: 6px;
+     transform: perspective(50px) rotateX(20deg);
+     background-color: white;
+     border: var(--car-border) solid var(--border-color);
+     z-index: 0;
+ 
+     overflow: hidden;
+     background-color: var(--windshield-color);
+ }
+ 
+ .roof::before {
+     content: "";
+     display: block;
+     position: relative;
+     height: 200%;
+     width: 10%;
+     left: 40px;
+     top: -30px;
+     rotate: 45deg;
+     background-color: var(--glare-color);
+ }
+ 
+ .roof::after {
+     content: "";
+     display: block;
+     position: relative;
+     height: 200%;
+     width: 4%;
+     left: 45px;
+     top: -110px;
+     rotate: 45deg;
+     background-color: var(--glare-color);
+ }

@@ -1,0 +1,150 @@
+.container {
+    display:block;
+    width: 100%;
+    margin-top: 200px;
+}
+
+
+button {
+    font-weight: 600;
+    font-size: 20px;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.result {
+    font-weight: 600;
+    font-size: 20px;
+    user-select: none;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.flex-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: relative;
+    top:100px;
+}
+
+.left_block {
+    display: block;
+    width: 20%;
+    text-wrap: balance;
+    position: relative;
+    margin: 0;
+}
+
+.right_block {
+    width: 60%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text_img {
+    display: flex;
+    /* border-bottom: 2px solid black; */
+    min-height: 64px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_block {
+    position: relative;
+    width: 48px;
+    height: 48px; 
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.like {
+    background-image: url(../img/like.png);
+}
+
+.dislike {
+    background-image: url(../img/dislike.png);
+}
+
+.text_block {
+    display: flex;
+    user-select: none;
+    padding: 10px;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+}
+
+.text_img .text {
+    width: 60%;
+}
+
+.text_img .img_block {
+    float: right;
+}
+
+.text {
+    position: relative;
+    border: 1px solid;
+    max-width: 30%;
+    text-align: center;
+    hyphens: auto;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 2;
+    font-weight: 100px;
+    padding: 40px;
+    color: white;
+}
+
+.right_block .text:hover{
+    box-shadow: 0 0 0 1px white;
+}
+
+.left_block .text_block{
+    width: 80%;
+}
+
+.scalling {
+    transform: scale(1.05);
+    transition: transform 1.2s ease;
+}
+
+.moving_opacity {
+    transform: translateY(250px);
+    opacity: 0;
+    transition: 1s transform 0.5s ease-in-out, 1s opacity 0.2s ease;
+}
+
+.uncorrect {
+    background-color: rgb(255, 77, 77);
+    transform: translateY(250px);
+    opacity: 0;
+    transition: background-color 0.5s ease, 1s transform 0.5s ease-in-out, 1s opacity 0.2s ease;
+}
+
+.correct {
+    opacity: 0;
+    transition: 0.5s opacity 4s;
+}
+
+ol {
+    list-style-type: none; 
+}

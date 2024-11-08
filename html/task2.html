@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Автомобильная тематика</title>
+        <link rel="icon" href="../images/favicon (1).ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/css/logo.css">
+        <link rel="stylesheet" type="text/css" href="/css/menu.css">
+        <link rel="stylesheet" type="text/css" href="/css/hub.css">
+        <link rel="stylesheet" type="text/css" href="/css/task2.css">
+    </head>
+    <body>
+        <header>
+            <div class="image_block">
+            <div class="logo">
+                <div class="upper">
+                    <div class="background">
+                        <div class="big-circle"></div>
+                        <div class="small-circle">
+                            <div class="box blue"></div>
+                            <div class="box white"></div>
+                            <div class="box white"></div>
+                            <div class="box blue"></div>
+                        </div>
+                    </div>
+                    <div class="car">
+                        <div id="left_wheel" class="wheel"></div>
+                        <div id="right_wheel" class="wheel"></div>
+    
+                        <div class="base">
+                            <div class="roof"></div>
+                            <div class="muzzle">
+                                <div class="headlight_unit">
+                                    <div class="headlight"></div>
+                                    <div class="headlight"></div>
+                                </div>
+                                <div class="headlight_unit">
+                                    <div class="headlight"></div>
+                                    <div class="headlight"></div>
+                                </div>
+                            </div>
+                            <div class="bumper"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ground">
+                    <div class="baseline"></div>
+                </div>
+            </div>
+            </div>
+            <div class="title">задания</div>
+        
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>  
+                    <li><a href="../html/hub.html">Задания</a></li>
+                    <li><a href="#">Курсовая работа</a></li> 
+                </ul>
+            </nav>
+    
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+        <div class="wrapper">
+            <label class="label">
+                <input type="checkbox" id="toggle" class="toggle">
+                <div id="platform" class="container_task2">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.000000 200.000000" width="200px" height="200px">
+                        <g id="LetterK" transform="translate(45.000000,140.000000) scale(0.150000, -0.150000)"
+                        fill="#000000" stroke="none">
+                            <path d="M70 376 c0 -9 12 -16 28 -18 l27 -3 3 -152 3 -152 -28 -3 c-17 -2
+                            -28 -9 -28 -18 0 -20 136 -22 143 -2 2 7 -9 15 -27 18 l-31 7 0 75 0 75 36 -6
+                            c49 -8 57 -17 106 -108 41 -77 43 -79 79 -79 40 0 60 17 38 31 -8 5 -24 9 -36
+                            9 -18 0 -30 14 -54 61 -17 34 -41 72 -55 86 l-24 24 42 62 c56 83 78 98 78 52
+                            0 -16 6 -25 15 -25 11 0 15 11 15 40 0 39 -1 40 -33 40 -37 0 -67 -26 -111
+                            -97 -26 -43 -52 -63 -80 -63 -13 0 -16 13 -16 65 l0 65 30 0 c20 0 30 5 30 15
+                            0 12 -15 15 -75 15 -58 0 -75 -3 -75 -14z"
+                            />
+                            <animateMotion id="moveLetter"
+                                    begin="toggle.click"
+                                    restart="never"
+                                    dur="1s"
+                                    path="M 0 0 Q -30 0 -40 -120"
+                                    fill="freeze"
+                            />
+                            <animateTransform
+                                attributeName="transform"
+                                attributeType="auto"
+                                type="scale"
+                                from="1 1"
+                                to="0.2 0.2"
+                                begin="moveLetter.beginEvent"
+                                fill="freeze"
+                                dur="1s"
+                                additive="sum"
+                            />
+                            
+                            <animate attributeName="opacity" from="1" to="0.1" begin="moveLetter.beginEvent" dur="1s" fill="freeze"/>
+    
+                            <circle r="15" fill="#e74c3c" opacity="0">
+                        
+                                <animateMotion id="motionCircleK" dur="3s" begin="platform.mouseover" restart="whenNotActive"
+                                            path="M70 376 c0 -9 12 -16 28 -18 l27 -3 3 -152 3 -152 -28 -3 c-17 -2
+                                            -28 -9 -28 -18 0 -20 136 -22 143 -2 2 7 -9 15 -27 18 l-31 7 0 75 0 75 36 -6
+                                            c49 -8 57 -17 106 -108 41 -77 43 -79 79 -79 40 0 60 17 38 31 -8 5 -24 9 -36
+                                            9 -18 0 -30 14 -54 61 -17 34 -41 72 -55 86 l-24 24 42 62 c56 83 78 98 78 52
+                                            0 -16 6 -25 15 -25 11 0 15 11 15 40 0 39 -1 40 -33 40 -37 0 -67 -26 -111
+                                            -97 -26 -43 -52 -63 -80 -63 -13 0 -16 13 -16 65 l0 65 30 0 c20 0 30 5 30 15
+                                            0 12 -15 15 -75 15 -58 0 -75 -3 -75 -14z"
+                                />
+    
+                                <animate attributeName="opacity" from="0" to="1" begin="motionCircleK.beginEvent" dur="0.2s" fill="freeze"/>
+                                <animate attributeName="opacity" from="1" to="0" begin="motionCircleK.endEvent" dur="0.0001s" fill="freeze"/>
+                            </circle>
+                        </g>
+    
+                        <g id="LetterE" transform="translate(95.000000,120.000000) scale(0.150000,-0.150000)"
+                        fill="#000000" stroke="none">
+                            <path d="M60 375 c0 -9 9 -15 25 -15 l25 0 0 -154 c0 -153 0 -155 -22 -158
+                                -13 -2 -23 -10 -23 -18 0 -13 24 -15 160 -15 l160 0 0 60 c0 47 -3 60 -15 60
+                                -10 0 -16 -13 -18 -42 l-3 -43 -100 0 -99 0 0 70 0 70 44 0 c39 0 45 -3 48
+                                -22 6 -47 23 -21 26 40 2 51 0 62 -13 62 -8 0 -15 -9 -15 -20 0 -17 -7 -20
+                                -45 -20 l-45 0 0 65 0 66 93 -3 92 -3 3 -37 c2 -25 8 -38 18 -38 10 0 14 14
+                                14 55 l0 55 -155 0 c-131 0 -155 -2 -155 -15z"/>
+    
+                            <animateMotion id="moveLetter"
+                                begin="toggle.click"
+                                restart="never"
+                                dur="1s"
+                                path="M 0 0 Q 30 0 87 74"
+                                fill="freeze"
+                            />
+    
+                            <animateTransform
+                                attributeName="transform"
+                                attributeType="auto"
+                                type="scale"
+                                from="1 1"
+                                to="0.2 0.2"
+                                begin="moveLetter.beginEvent"
+                                fill="freeze"
+                                dur="1s"
+                                additive="sum"
+                            />
+                            
+                            <animate attributeName="opacity" from="1" to="0.1" begin="moveLetter.beginEvent" dur="1s" fill="freeze"/>
+    
+                            <circle r="15" fill="#e74c3c" opacity="0">
+                
+                                <animateMotion id="motionCircleE" dur="3s" begin="platform.mouseover" restart="whenNotActive"
+                                            path="M60 375 c0 -9 9 -15 25 -15 l25 0 0 -154 c0 -153 0 -155 -22 -158
+                                            -13 -2 -23 -10 -23 -18 0 -13 24 -15 160 -15 l160 0 0 60 c0 47 -3 60 -15 60
+                                            -10 0 -16 -13 -18 -42 l-3 -43 -100 0 -99 0 0 70 0 70 44 0 c39 0 45 -3 48
+                                            -22 6 -47 23 -21 26 40 2 51 0 62 -13 62 -8 0 -15 -9 -15 -20 0 -17 -7 -20
+                                            -45 -20 l-45 0 0 65 0 66 93 -3 92 -3 3 -37 c2 -25 8 -38 18 -38 10 0 14 14
+                                            14 55 l0 55 -155 0 c-131 0 -155 -2 -155 -15z"
+                                />
+    
+                                <animate attributeName="opacity" from="0" to="1" begin="motionCircleE.beginEvent" dur="0.2s" fill="freeze"/>
+                                <animate attributeName="opacity" from="1" to="0" begin="motionCircleE.endEvent" dur="0.0001s" fill="freeze"/>
+                            </circle>
+                        </g>
+                    </svg>
+                    <div class="picture_text">
+                        <div class="picture" id="Logo2"></div>
+                        <div class=text>Клочко<br>Евгений</div>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <footer>
+            © 2024 BMW M4 Competition. Все права защищены.
+        </footer>
+        <script src="/js/menu.js"></script>
+    </body>
+</html>
