@@ -6,7 +6,8 @@
     width: 50%;
     min-width: 500px;
     text-align: center;
-    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
     /* background-color: rgb(94, 94, 94); */
 }
 
@@ -122,3 +123,12 @@
     list-style: none;
 }
 
+@media (min-width: 576px) and (max-width: 1200px) {
+    .container_hub {
+        scale: 1.2;
+        margin-top: 0;
+    }
+    .container_hub .block .text {
+        font-size: 40px;
+    }
+}
