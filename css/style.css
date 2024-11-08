@@ -137,7 +137,7 @@ footer {
 #front_side {
     width: 587px;
     height: 416px;
-    background-image: url(/img/car_front_side.png);
+    background-image: url('/img/car_front_side.png');
     background-repeat: no-repeat;
 }
 
@@ -251,7 +251,7 @@ img {
     background-color: white;
 }
 
-@media (min-width: 576px) and (max-width: 1199.98px) {
+@media (min-width: 576px) and (max-width: 1200px) {
     .text_block, .title, .foreword{
         font-size: 30px;
     }

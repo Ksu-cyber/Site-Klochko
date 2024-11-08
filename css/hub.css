@@ -34,49 +34,49 @@
 }
 
 #task1 {
-    background-image: url("../img/task1.png");
+    background-image: url('../img/task1.png');
     background-position: center;
     background-size:cover;
 }
 
 #task2 {
-    background-image: url("../img/task2.png");
+    background-image: url('../img/task2.png');
     background-position: center;
     background-size:cover;
 }
 
 #task3 {
-    background-image: url("../img/task3.png");
+    background-image: url('../img/task3.png');
     background-position: center;
     background-size:cover;
 }
 
 #task4 {
-    background-image: url("../img/task4.png");
+    background-image: url('../img/task4.png');
     background-position: center;
     background-size:cover;
 }
 
 #task5 {
-    background-image: url("../img/task5.png");
+    background-image: url('../img/task5.png');
     background-position: center;
     background-size:cover;
 }
 
 #task6 {
-    background-image: url("../img/task6.png");
+    background-image: url('../img/task6.png');
     background-position: center;
     background-size:cover;
 }
 
 #task7 {
-    background-image: url("../img/task7.png");
+    background-image: url('../img/task7.png');
     background-position: center;
     background-size:cover;
 }
 
 #task8 {
-    background-image: url("../img/task8.png");
+    background-image: url('../img/task8.png');
     background-position: center;
     background-size:cover;
 }
